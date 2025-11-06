@@ -1,4 +1,4 @@
-.app { max-width: 600px; margin: 30px auto; font-family: sans-serif; }
+.app { max-width: 200px; margin: 30px auto; font-family: sans-serif; }
 .display { background:#222; color:#fff; padding:15px; border-radius:8px; margin-bottom:12px; }
 .expression { font-size:22px; opacity:0.85; }
 .result { font-size:28px; font-weight:bold; }
