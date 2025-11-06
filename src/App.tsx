@@ -10,11 +10,11 @@ import "./App.css";
 
 export default function App() {
 const [expr, setExpr] = useState("");
-const [out, setOut] = useState<string | null>(null);
+
 
 
 const append = (s: string) => setExpr((e) => e + s);
-const clear = () => { setExpr(""); setOut(null); };
+const clear = () => { setExpr("");  };
 const del = () => setExpr((e) => e.slice(0, -1));
 
 
@@ -23,19 +23,19 @@ try {
 const res = await invoke<string>("compute", { expression: expr });
 setExpr(res);
 } catch (err) {
-setOut("Error");
+setExpr("Error");
 }
 };
 
 
 return (
 <div className="app">
-<h1>Calculadora</h1>
+
 
 
 <div className="display">
 <div className="expression">{expr || "0"}</div>
-<div className="result">{out ?? ""}</div>
+
 </div>
 
 
