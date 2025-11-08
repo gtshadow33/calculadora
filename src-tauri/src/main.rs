@@ -8,7 +8,7 @@ fn compute(expression: String) -> Result<String, String> {
             if v.fract() == 0.0 {
                 Ok(format!("{}", v as i64))
             } else {
-                Ok(format!("{:.3}", v)) // deja decimales naturales
+                Ok(format!("{:.3}", v)) // deja decimales 
             }
         }
         Err(_) => Err("Error al calcular".to_string()),
